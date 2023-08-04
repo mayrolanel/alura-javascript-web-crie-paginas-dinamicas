@@ -5,6 +5,15 @@ tecla_pom.addEventListener('click', ()=> {
     pom.play()
 });
 
+const teclas = document.querySelectorAll('.tecla')
+const audios = document.querySelectorAll('[id*="som_tecla"]')
+
+teclas.forEach((tecla, index)=> {
+    tecla.addEventListener('click', ()=> {
+        audios[index].play()
+    })
+})
+
 let tecla_clap = document.querySelector('.tecla_clap')
 let tecla_tim = document.querySelector('.tecla_tim')
 let tecla_puff = document.querySelector('.tecla_puff')
