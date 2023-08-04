@@ -1,4 +1,10 @@
 let tecla_pom = document.querySelector('.tecla_pom')
+
+tecla_pom.addEventListener('click', ()=> {
+    const pom = document.querySelector('#som_tecla_pom')
+    pom.play()
+});
+
 let tecla_clap = document.querySelector('.tecla_clap')
 let tecla_tim = document.querySelector('.tecla_tim')
 let tecla_puff = document.querySelector('.tecla_puff')
